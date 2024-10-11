@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Corrida</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nova Corrida - Forno: {{ forno }}</h1>
+    </header>
+
+    <div class="dashboard-container">
+        <h2>Bem-vindo, {{ user }}</h2>
+        <p>Forno Selecionado: {{ forno }}</p>
+
+        <div class="sensor-data">
+            <h3>Dados dos Sensores</h3>
+            <p><strong>Corrente:</strong> {{ current }} A</p>
+            <p><strong>Voltagem:</strong> {{ voltage }} V</p>
+            <p><strong>Temperatura:</strong> {{ temperature }} °C</p>
+            <p><strong>Aceleração:</strong> {{ acceleration }} m/s²</p>
+        </div>
+
+        <div class="action-buttons">
+            <a href="/corridas-anteriores" class="button">Ver Corridas Anteriores</a>
+            <a href="/logout" class="button">Logout</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sistema de Gerenciamento de Corridas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

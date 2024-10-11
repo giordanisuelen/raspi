@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #a09e9c;
+    text-transform: initial;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+a, a:hover, a:active, a:focus {
+    display: inline-block;
+    text-decoration: none;
+    color: #343a3f;
+    font-size: 16px;
+    padding: 0;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/*=================================
+    Header and General Navigation
+=================================*/
+header {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #f6f8fa;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #343a3f;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    font-size: 1rem;
+    color: #a09e9c;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff545a;
+}
+
+/*=================================
+    Button Styling
+=================================*/
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.button {
+    background-color: #ff545a;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #f43032;
+}
+
+/*=================================
+    Forms (Login, Register)
+=================================*/
+.form-container {
+    margin: 50px auto;
+    padding: 30px;
+    width: 80%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #505866;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #343a3f;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+select {
+    background-color: #fff;
+    color: #505866;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff545a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #f43032;
+}
+
+/*=================================
+    Dashboard (Nova Corrida)
+=================================*/
+.dashboard-container {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.dashboard-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #343a3f;
+}
+
+.dashboard-container p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #505866;
+}
+
+/*=================================
+    Footer
+=================================*/
+footer {
+    padding: 20px;
+    background-color: #343a3f;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    color: #a09e9c;
+}

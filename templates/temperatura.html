@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Temperatura</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Dados de Temperatura</h1>
+        {% if temp_data %}
+            <p><strong>{{ temp_data.name }}:</strong></p>
+            <p>Temperatura: {{ temp_data.temperature }} °C</p>
+            <p>Pressão: {{ temp_data.pressure }} Pa</p>
+        {% else %}
+            <p>Erro ao ler a temperatura.</p>
+        {% endif %}
+        <a class="button" href="/">Voltar</a>
+    </div>
+</body>
+</html>

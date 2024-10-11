@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados dos Sensores</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Dados dos Sensores</h1>
+
+    <h2>Temperatura</h2>
+    <p>Temperatura: {{ temperatura.main.temp }} °C</p>
+    <p>Descrição: {{ temperatura.temperatura[0].description }}</p>
+    
+    <h2>Corrente</h2>
+    <p>Corrente: {{ corrente }} A</p>
+    
+    <h2>Tensão</h2>
+    <p>Tensão: {{ tensao }} V</p>
+
+    <h2>Aceleração</h2>
+    <p>Aceleração X: {{ aceleracao.x }} m/s²</p>
+    <p>Aceleração Y: {{ aceleracao.y }} m/s²</p>
+    <p>Aceleração Z: {{ aceleracao.z }} m/s²</p>
+
+    <a href="/">Voltar para a Página Inicial</a>
+</body>
+</html>

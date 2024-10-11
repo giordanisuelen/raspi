@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corridas Anteriores</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Corridas Anteriores</h1>
+    </header>
+
+    <div class="dashboard-container">
+        <h2>Histórico de Corridas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Forno</th>
+                    <th>Data</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for corrida in corridas %}
+                <tr>
+                    <td>{{ corrida.id }}</td>
+                    <td>{{ corrida.forno }}</td>
+                    <td>{{ corrida.data }}</td>
+                    <td>{{ corrida.status }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="action-buttons">
+            <a href="/nova-corrida" class="button">Iniciar Nova Corrida</a>
+            <a href="/logout" class="button">Logout</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sistema de Gerenciamento de Corridas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
